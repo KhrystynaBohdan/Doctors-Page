@@ -1,0 +1,133 @@
+
+.header-block {
+  background-image: url("images/top-block-bg-mobile.png");
+  background-size: cover;
+
+  @media (min-width: 768px) {
+    background: url("../images/top-block-bg.png") no-repeat;
+    background-size: cover;
+  }
+}
+
+.header {
+  background-color: #FFFFFF;
+
+  @media (min-width: 768px) {
+    background: none;
+    display: flex;
+    align-items: center;
+    padding: 16px 14%;
+  }
+
+  &__text {
+    font-size: 24px;
+    line-height: 32px;
+    color: #252B42;
+    font-weight: 700;
+
+    @media (min-width: 768px) {
+      color: #FFFFFF;
+    }
+  }
+
+  &__nav {
+    padding: 35px 35px 0 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (min-width: 768px) {
+      padding: 0;
+    }
+  }
+
+  &__icon {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: rgba(0, 0, 0, 0.25) 0 25px 50px -12px;
+    }
+
+    &:active {
+      svg path {
+        fill: #23A6F0;
+      }
+    }
+
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+
+  &__options {
+    padding: 80px 0;
+    text-align: center;
+
+    @media (min-width: 768px) {
+      display: flex;
+      padding: 0;
+      gap: 30px;
+      margin-left: 10%;
+    }
+  }
+
+  &__option {
+    margin: 30px;
+
+    @media (min-width: 768px) {
+      margin: 0;
+    }
+  }
+
+  &__option a {
+    text-decoration: none;
+    color: #737373;
+    font-size: 30px;
+    line-height: 45px;
+    text-align: center;
+
+    &:hover {
+      cursor: pointer;
+      color: #23A6F0;
+    }
+
+    @media (min-width: 768px) {
+      color: #FFFFFF;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 24px;
+    }
+  }
+
+  &__button {
+    display: none;
+    color: #FFFFFF;
+    background-color: #23A6F0;
+    border: 1px solid #23A6F0;
+    padding: 15px 40px;
+    font-weight: 700;
+    border-radius: 5px;
+    font-size: 14px;
+    line-height: 22px;
+    cursor: pointer;
+    min-width: 200px;
+
+    &:hover {
+      cursor: pointer;
+      color: #252B42;
+      border: 1px solid #252B42;
+      background-color: transparent;
+
+      svg path {
+        fill: #252B42;
+      }
+    }
+
+    @media (min-width: 768px) {
+      display: block;
+      margin-left: auto;
+    }
+  }
+}

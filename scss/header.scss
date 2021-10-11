@@ -40,6 +40,12 @@
       padding: 0;
     }
   }
+  select {
+    &:focus-visible {
+      outline: 2px solid red;
+      border-radius: 2px;
+    }
+  }
 
   &__icon {
     border: none;

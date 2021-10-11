@@ -50,6 +50,12 @@
     height: 72px;
     background: #FFFFFF;
     border-radius: 50%;
+    background-image: url("../images/svg/svg-desktop.svg");
+
+    @media (min-width: 768px) {
+      background-image: url("../images/svg/svg-mobile.svg");
+    }
+
   }
   &__title{
     margin-left: 10px;

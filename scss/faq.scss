@@ -1,4 +1,4 @@
-.faq{
+.faq {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,31 +9,29 @@
   @media (min-width: 768px) {
     gap: 80px;
   }
-  &__title{
-    font-size: 40px;
-    line-height: 57px;
-    font-weight: 700;
-    color: #252B42
+
+  &__title {
+    @include title;
   }
-  &__subtitle{
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 20px;
-    color: #737373;
-    max-width: 470px; // todo
+
+  &__subtitle {
+    @include subtitle;
   }
-  &__content{
+
+  &__content {
     display: flex;
     flex-direction: column;
     text-align: left;
     gap: 5px;
   }
-  &__content-title{
+
+  &__content-title {
     font-weight: 700;
     font-size: 16px;
     line-height: 24px;
-    color: #252B42;
+    color: $secondary-color;
   }
+
   &__container {
     display: flex;
     gap: 30px;
@@ -41,10 +39,11 @@
     justify-content: center;
     max-width: 1100px;
   }
-  &__card{
+
+  &__card {
     display: flex;
     padding: 25px;
-    background-color: #FFFFFF;
+    background-color: $white;
     gap: 15px;
     max-width: 330px;
   }
@@ -52,9 +51,10 @@
   &__arrow {
     cursor: pointer;
     height: 24px;
+
     &:hover {
       svg path {
-        fill: red;
+        fill: $red;
       }
     }
   }

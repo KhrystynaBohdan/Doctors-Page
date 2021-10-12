@@ -30,7 +30,7 @@
   &__title {
     font-size: 40px;
     line-height: 55px;
-    color: #FFFFFF;
+    color: $white;
     font-weight: 700;
 
     @media (min-width: 768px) {
@@ -44,7 +44,7 @@
     font-weight: 500;
     font-size: 20px;
     line-height: 30px;
-    color: #FFFFFF;
+    color: $white;
 
     @media (min-width: 768px) {
       text-align: left;
@@ -52,9 +52,9 @@
   }
 
   &__get {
-    color: #FFFFFF;
-    background-color: #23A6F0;
-    border: 1px solid #23A6F0;
+    color: $white;
+    background-color: $primary-color;
+    border: 1px solid $primary-color;
     border-radius: 37px;
     padding: 10px 35px;
     font-weight: 700;
@@ -62,7 +62,7 @@
 
     &:hover {
       background-color: transparent;
-      border: 1px solid #FFFFFF;
+      border: 1px solid $white;
       cursor: pointer;
     }
   }
@@ -70,18 +70,19 @@
   &__learn {
     background-color: transparent;
     border-radius: 37px;
-    border: 1px solid #FFFFFF;
+    border: 1px solid $white;
     padding: 10px 35px;
     font-size: 14px;
     line-height: 22px;
-    color: #FFFFFF;
+    color: $white;
     font-weight: 700;
     margin-top: 20px;
     height: 42px;
+    font-family: Montserrat, Helvetica, Arial, sans-serif;
 
     &:hover {
-      background-color: #23A6F0;
-      border: 1px solid #23A6F0;
+      background-color: $primary-color;
+      border: 1px solid $primary-color;
       cursor: pointer;
     }
   }
@@ -92,7 +93,7 @@
     flex-direction: column;
     width: 80%;
     max-width: 330px;
-    background-color: #FFFFFF;
+    background-color: $white;
     border-radius: 5px;
     padding: 40px;
   }
@@ -107,17 +108,24 @@
     font-size: 14px;
     line-height: 28px;
     font-family: Montserrat, Helvetica, Arial, sans-serif;
+  }
+
+  input {
+    &:hover {
+      box-shadow: rgba(0, 0, 0, 0.25) 0 25px 50px -12px;
+    }
+  }
+
+  select {
+    appearance: none;
+    outline: 0;
+    background: url("images/arrows.svg") no-repeat;
+    background-position: right 20px top 50%;
 
     &:hover {
       cursor: pointer;
       box-shadow: rgba(0, 0, 0, 0.25) 0 25px 50px -12px;
     }
-  }
-  select{
-    appearance: none;
-    outline: 0;
-    background: url("images/arrows.svg") no-repeat;
-    background-position: right 20px top 50%;
   }
 
   label {
@@ -129,26 +137,12 @@
     font-weight: 700;
     font-size: 24px;
     line-height: 32px;
-    color: #252B42;
+    color: $secondary-color;
     text-align: center;
   }
 
   &__submit {
-    color: #FFFFFF;
-    background-color: #23A6F0;
-    border: 1px solid #23A6F0;
-    padding: 15px 40px;
-    font-weight: 700;
-    border-radius: 5px;
     margin-top: 40px;
     font-size: 14px;
-    line-height: 22px;
-
-    &:hover {
-      cursor: pointer;
-      color: #252B42;
-      border: 1px solid #252B42;
-      background-color: transparent;
-    }
   }
 }

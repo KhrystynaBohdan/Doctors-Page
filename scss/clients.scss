@@ -1,4 +1,4 @@
-.clients{
+.clients {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10,23 +10,19 @@
     gap: 80px;
   }
 
-  &__top{
+  &__top {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
-  &__top-title{
-    font-size: 40px;
-    line-height: 57px;
-    font-weight: 700;
+
+  &__top-title {
+    @include title;
   }
-  &__top-subtitle{
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 20px;
-    color: #737373;
-    max-width: 470px; // todo
+
+  &__top-subtitle {
+    @include subtitle;
   }
 
   &__cards {
@@ -42,17 +38,19 @@
     border-radius: 10px;
     max-width: 330px;
   }
-  &__content{
+
+  &__content {
     padding: 35px 30px;
-    background-color: #FFFFFF;
+    background-color: $white;
     border: 1px solid #DEDEDE;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
     gap: 20px;
   }
-  &__reference{
-    color: #737373;
+
+  &__reference {
+    color: $grey-color;
     font-weight: 600;
     font-size: 14px;
     line-height: 24px;

@@ -1,4 +1,4 @@
-.pricing{
+.pricing {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,23 +16,25 @@
     flex-direction: column;
   }
 
-  &__title{
+  &__title {
     font-size: 40px;
     line-height: 57px;
     font-weight: 700;
-    color: #252B42;
+    color: $secondary-color;
     text-align: center;
 
   }
-  &__subtitle{
+
+  &__subtitle {
     font-weight: 500;
     font-size: 14px;
     line-height: 20px;
-    color: #737373;
+    color: $grey-color;
     text-align: center;
-    max-width: 470px; // todo
+    max-width: 470px;
   }
-  &__container{
+
+  &__container {
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
@@ -44,8 +46,9 @@
       align-items: flex-end;
     }
   }
-  &__card{
-    background-color: #FFFFFF;
+
+  &__card {
+    background-color: $white;
     padding: 50px 40px;
     display: flex;
     flex-direction: column;
@@ -53,99 +56,96 @@
     border: 1px solid #A9D6FF;
     width: 100%;
     max-width: 330px;
-    &--black{
-      background-color: #252B42;
+
+    &--black {
+      background-color: $secondary-color;
       padding: 80px 40px;
     }
   }
-  &__header{
+
+  &__header {
     display: flex;
     flex-direction: column;
     gap: 35px;
     text-align: center;
 
   }
-  &__header-title{
+
+  &__header-title {
     font-size: 24px;
     line-height: 32px;
-    color: #252B42;
+    color: $secondary-color;
     font-weight: 700;
-    &--black{
-      color: #FFFFFF;
+
+    &--black {
+      color: $white;
     }
   }
-  &__header-subtitle{
+
+  &__header-subtitle {
     font-size: 16px;
     line-height: 24px;
-    color: #737373;
+    color: $grey-color;
     font-weight: 700;
     padding: 0 40px;
     max-width: 470px; // todo
-    &--black{
-      color: #FFFFFF;
+    &--black {
+      color: $white;
     }
   }
-  &__header-value{
+
+  &__header-value {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
   }
-  &__header-number{
+
+  &__header-number {
     font-weight: 700;
-    color: #23A6F0;
+    color: $primary-color;
     font-size: 40px;
     line-height: 57px;
   }
-  &__header-exchange{
+
+  &__header-exchange {
     text-align: left;
   }
-  &__header-dolar{
+
+  &__header-dolar {
     font-size: 16px;
     line-height: 24px;
-    color: #23A6F0;
+    color: $primary-color;
     font-weight: 700;
   }
-  &__header-permonth{
+
+  &__header-permonth {
     color: #8EC2F2;
     font-weight: 600;
     font-size: 14px;
     line-height: 24px;
   }
-  &__options{
+
+  &__options {
     display: flex;
     flex-direction: column;
     gap: 15px;
   }
-  &__option{
+
+  &__option {
     display: flex;
     font-weight: 600;
     font-size: 14px;
     line-height: 24px;
-    color: #252B42;
+    color: $secondary-color;
     gap: 10px;
-    &--black{
-      color: #FFFFFF;
+
+    &--black {
+      color: $white;
     }
 
     svg {
       flex-shrink: 0;
-    }
-  }
-  &__button-try{
-    color: #FFFFFF;
-    background-color: #23A6F0;
-    border: 1px solid #23A6F0;
-    padding: 15px 0;
-    font-weight: 700;
-    border-radius: 5px;
-    font-size: 14px;
-    line-height: 22px;
-    &:hover {
-      cursor: pointer;
-      color: red;
-      border: 1px solid red;
-      background-color: transparent;
     }
   }
 }

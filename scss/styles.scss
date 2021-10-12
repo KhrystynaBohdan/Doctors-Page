@@ -1,5 +1,7 @@
 @import "reset";
-//@import "variables";
+@import "variables";
+@import "mixins";
+@import "button";
 @import "header";
 @import "top-block";
 @import "cards";
@@ -10,7 +12,14 @@
 @import "footer";
 @import "copyright";
 
-body{
-  background: #FFFFFF;
+body {
+  background: $white;
   font-family: Montserrat, Helvetica, Arial, sans-serif;
+}
+
+.footer__icon, a, button, select, input {
+  &:focus-visible {
+    outline: 2px solid #cccaca;
+    border-radius: 2px;
+  }
 }

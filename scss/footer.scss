@@ -26,7 +26,7 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 20px;
-    color: #737373;
+    color: $grey-color;
   }
 
   &__icons {
@@ -39,7 +39,7 @@
 
     &:hover {
       svg path {
-        fill: red
+        fill: $red
       }
     }
   }
@@ -52,14 +52,14 @@
 
   &__option {
     text-decoration: none;
-    color: #737373;
+    color: $grey-color;
     font-weight: 600;
     font-size: 14px;
     line-height: 24px;
 
     &:hover {
       cursor: pointer;
-      color: #23A6F0;
+      color: $primary-color;
     }
   }
 

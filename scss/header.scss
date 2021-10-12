@@ -4,13 +4,13 @@
   background-size: cover;
 
   @media (min-width: 768px) {
-    background: url("../images/top-block-bg.png") no-repeat;
+    background: url("/images/top-block-bg.png") no-repeat;
     background-size: cover;
   }
 }
 
 .header {
-  background-color: #FFFFFF;
+  background-color: $white;
 
   @media (min-width: 768px) {
     background: none;
@@ -22,11 +22,11 @@
   &__text {
     font-size: 24px;
     line-height: 32px;
-    color: #252B42;
+    color: $secondary-color;
     font-weight: 700;
 
     @media (min-width: 768px) {
-      color: #FFFFFF;
+      color: $white;
     }
   }
 
@@ -40,9 +40,10 @@
       padding: 0;
     }
   }
+
   select {
     &:focus-visible {
-      outline: 2px solid red;
+      outline: 2px solid $grey-color;
       border-radius: 2px;
     }
   }
@@ -58,7 +59,7 @@
 
     &:active {
       svg path {
-        fill: #23A6F0;
+        fill: $primary-color;
       }
     }
 
@@ -89,18 +90,18 @@
 
   &__option a {
     text-decoration: none;
-    color: #737373;
+    color: $grey-color;
     font-size: 30px;
     line-height: 45px;
     text-align: center;
 
     &:hover {
       cursor: pointer;
-      color: #23A6F0;
+      color: $primary-color;
     }
 
     @media (min-width: 768px) {
-      color: #FFFFFF;
+      color: $white;
       font-size: 14px;
       font-weight: 600;
       line-height: 24px;
@@ -109,27 +110,7 @@
 
   &__button {
     display: none;
-    color: #FFFFFF;
-    background-color: #23A6F0;
-    border: 1px solid #23A6F0;
-    padding: 15px 40px;
-    font-weight: 700;
-    border-radius: 5px;
-    font-size: 14px;
-    line-height: 22px;
-    cursor: pointer;
     min-width: 200px;
-
-    &:hover {
-      cursor: pointer;
-      color: #252B42;
-      border: 1px solid #252B42;
-      background-color: transparent;
-
-      svg path {
-        fill: #252B42;
-      }
-    }
 
     @media (min-width: 768px) {
       display: block;

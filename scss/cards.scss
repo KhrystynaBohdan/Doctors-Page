@@ -48,10 +48,10 @@
     height: 72px;
     background: $white;
     border-radius: 50%;
-    background-image: url("/images/svg/svg-desktop.svg");
+    background-image: url("images/svg/svg-desktop.svg");
 
     @media (min-width: 768px) {
-      background-image: url("/images/svg/svg-mobile.svg");
+      background-image: url("images/svg/svg-mobile.svg");
     }
 
   }
